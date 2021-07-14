@@ -1,0 +1,116 @@
+/* Font-style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;}
+
+/* Header Section */
+.top-section{
+    background-color:#2D25A0;}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 42px;
+    padding-left: 156px;
+    margin-right: 170px;}
+.menus{
+    color: white;
+    text-decoration: none;
+    margin: 0px 36px;}
+
+.button{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    text-decoration: none;
+    position: absolute;}
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 135px 140px 86px 156px;}
+.copa{
+    color: #E02C6D;}
+.header-title{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;}
+
+
+/* Grid-Area */
+.main-container{
+    display: flex;
+    justify-content: center;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    margin-top: 70px;
+    margin-bottom: 100px;}
+
+.grid-element{
+    box-shadow: 5px 5px 30px lightgrey;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;}
+
+/* Footer-Area */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 63px;}
+
+.footer-icon i{
+    color: #969BAB;
+    font-size: 32px;
+    margin: 20px;
+    margin-bottom: 25px;}
+
+/* Transition */
+.top-section:hover{
+    background-color: rgb(59, 57, 57);
+    transition: background-color 1s;}
+
+.button:hover{
+    font-size: 25px;
+    transition: font-size 1s;}
+
+.top-section:hover .banner img{
+    transform: rotate(45deg);
+    transition: transform 0.7s ease-out;}
+
+.grid-element:hover{
+    transform: translateY(-20px);
+    transition: transform 0.5s;
+    background-color: rgba(95, 158, 160, 0.158);}
+
+/* Bonus-Part-Map */
+.map{ margin-bottom: 100px;}
+.mapouter {position:relative;text-align:right;width:100%;height:400px;}
+.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}
+.gmap_iframe {height:400px!important;}
+
+/* Bonus-Part-Video */
+.video iframe{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;}
+
+/* Responsive */
+@media only screen and (max-width:688px){
+nav{display: none;}
+.banner{
+    display: flex;
+    flex-direction: column;}
+.banner img{
+    margin-top: 100px;}
+.grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); }
